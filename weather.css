@@ -1,0 +1,43 @@
+.border {
+  border: 5px solid grey;
+  padding: 20px;
+  margin: 10px;
+}
+#temperature {
+  font-size: 70px;
+}
+.big {
+  font-size: 70px;
+}
+.col-sm h2 {
+  font-size: 20px;
+  color: gray;
+}
+
+h4 a {
+  text-decoration: none;
+  position: relative;
+  font-size: 30px;
+  top: -32px;
+}
+
+.col-sm img {
+  display: block;
+  margin: 0 auto;
+}
+.weather-app {
+  border: 1px solid #dadde1;
+  padding: 15px;
+  margin: 20px auto;
+  border-radius: 10px;
+  max-width: 600px;
+}
+.d-flex {
+  margin-bottom: 15px;
+}
+.col-sm .little {
+  padding-left: 10px;
+}
+.col-sm .more {
+  padding-left: 15px;
+}
