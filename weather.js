@@ -22,7 +22,7 @@ h2.innerHTML = `${day} ${hours}:${minutes}`;
 function displayWeatherCondition(response) {
   document.querySelector("#city").innerHTML = response.data.name;
   let temp = document.querySelector("#temperature");
-  temp.innerHTML = `${response.data.main.temp}`;
+  temp.innerHTML = `${Math.round(response.data.main.temp)}`;
 
   document.querySelector("#description").innerHTML =
     response.data.main.description;
