@@ -4,7 +4,7 @@
   margin: 10px;
 }
 strong {
-  font-size: 70px;
+  font-size: 60px;
 }
 .big {
   font-size: 70px;
@@ -18,17 +18,17 @@ strong {
 }
 #celsius-link {
   position: relative;
-  font-size: 30px;
-  top: -32px;
+  font-size: 25px;
+  top: -28px;
 }
 #celsius-link a {
   text-decoration: none;
 }
 ul li {
   list-style-type: none;
-  text-align: center;
-  margin: 0;
-  padding: 0;
+  font-size: 17px;
+  margin-top: 10px;
+  padding-top: 10px;
 }
 .col-sm img {
   display: block;

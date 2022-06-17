@@ -20,12 +20,16 @@ let h2 = document.querySelector("h2");
 h2.innerHTML = `${day} ${hours}:${minutes}`;
 
 function displayWeatherCondition(response) {
+  console.log(response.data);
   document.querySelector("#city").innerHTML = response.data.name;
   let temp = document.querySelector("#temperature");
   temp.innerHTML = `${Math.round(response.data.main.temp)}`;
   let descriptionElement = document.querySelector("#description");
   descriptionElement.innerHTML = response.data.weather[0].description;
-  console.log(response.data);
+  let humdityElement = document.querySelector("#humidity");
+  humdityElement.innerHTML = response.data.main.humidity;
+  let windElement = document.querySelector("#wind");
+  windElement.innerHTML = Math.round(response.data.wind.speed);
 }
 
 function search(event) {
