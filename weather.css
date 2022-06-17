@@ -14,11 +14,13 @@
   color: gray;
 }
 
-h4 a {
-  text-decoration: none;
+span {
   position: relative;
   font-size: 30px;
   top: -32px;
+}
+h4 a {
+  text-decoration: none;
 }
 
 .col-sm img {
