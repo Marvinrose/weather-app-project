@@ -30,6 +30,10 @@ function displayWeatherCondition(response) {
   humdityElement.innerHTML = response.data.main.humidity;
   let windElement = document.querySelector("#wind");
   windElement.innerHTML = Math.round(response.data.wind.speed);
+  let dateElement = document.querySelector("#date");
+  dateElement.innerHTML = formateDate(response.data.dt * 1000);
+
+  celsiusTemperature = response.data.main.temp;
 }
 
 function search(event) {
@@ -43,15 +47,26 @@ function search(event) {
   axios.get(apiUrl).then(displayWeatherCondition);
 }
 
+function displayFahrenheitTemperature(event) {
+  event.preventDefault();
+  let fahrenheitTemperature = (celsiusTemperature * 9) / 5 + 32;
+  let temperatureElement = document.querySelector("#temperature");
+  temperatureElement.innerHTML = Math.round(fahrenheitTemperature);
+}
+
+function displayCelsiusTemperature(event) {
+  event.preventDefault();
+  let temperatureElement = document.querySelector("#temperature");
+  temperatureElement.innerHTML = Math.round(celsiusTemperature);
+}
+
+let celsiusTemperature = null;
+
 let searchForm = document.querySelector("#search-form");
 searchForm.addEventListener("submit", search);
 
-function displayFahrenheitTemperature(event) {
-  event.preventDefault();
-  let fahrenheitTemperature = (14 * 9) / 5 + 32;
-  let temperatureElement = document.querySelector(#temperature);
-  temperatureElement.innerHTML = fahrenheitTemperature;
-}
-
 let fahrenheitLink = document.querySelector("#fahrenheit-link");
 fahrenheitLink.addEventListener("click", displayFahrenheitTemperature);
+
+let celsiusLink = document.querySelector("#celsius-link");
+fahrenheitLink.addEventListener("click", displayCelsiusTemperature);
