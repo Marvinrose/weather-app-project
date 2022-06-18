@@ -16,12 +16,12 @@ strong {
 #description {
   text-transform: capitalize;
 }
-#celsius-link {
+#units {
   position: relative;
   font-size: 25px;
   top: -28px;
 }
-#celsius-link a {
+#units a {
   text-decoration: none;
 }
 ul li {

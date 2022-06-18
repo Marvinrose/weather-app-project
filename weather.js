@@ -45,3 +45,10 @@ function search(event) {
 
 let searchForm = document.querySelector("#search-form");
 searchForm.addEventListener("submit", search);
+
+function displayFahrenheitTemperature(event) {
+  event.preventDefault();
+}
+
+let fahrenheitLink = document.querySelector("#fahrenheit-link");
+fahrenheitLink.addEventListener("click", displayFahrenheitTemperature);
