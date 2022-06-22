@@ -41,13 +41,19 @@ ul li {
   margin: 0 auto;
 }
 .weather-app {
-  border: 1px solid #dadde1;
+  border: 5px solid turquoise;
   padding: 25px;
   margin: 20px auto;
   border-radius: 10px;
   max-width: 600px;
   margin-bottom: 0;
   padding-bottom: 10;
+  background: radial-gradient(
+    circle at 10% 20%,
+    rgb(253, 239, 132) 0%,
+    rgb(247, 198, 169) 54.2%,
+    rgb(21, 186, 196) 100.3%
+  );
 }
 .d-flex {
   margin-bottom: 15px;
