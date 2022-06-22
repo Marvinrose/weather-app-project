@@ -48,10 +48,10 @@ ul li {
   max-width: 600px;
   margin-bottom: 0;
   padding-bottom: 10;
-  background: linear-gradient(
-    44.8deg,
-    rgba(255, 136, 102, 0.67) -53.1%,
-    rgba(255, 221, 136, 0.28) 49%
+  background: radial-gradient(
+    circle at 10% 20%,
+    rgba(234, 249, 249, 0.67) 0.1%,
+    rgba(239, 249, 251, 0.63) 90.1%
   );
 }
 
