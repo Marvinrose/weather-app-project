@@ -41,18 +41,15 @@ ul li {
   margin: 0 auto;
 }
 .weather-app {
-  border: 5px solid #1c4648;
+  border: 7px solid #ffcb1b;
   padding: 25px;
   margin: 20px auto;
   border-radius: 10px;
   max-width: 600px;
   margin-bottom: 0;
   padding-bottom: 10;
-  background: radial-gradient(
-    circle at 10% 20%,
-    rgba(234, 249, 249, 0.67) 0.1%,
-    rgba(239, 249, 251, 0.63) 90.1%
-  );
+  background-color: #031b91;
+  color: #fff;
 }
 
 .d-flex {
@@ -70,14 +67,12 @@ ul li {
 .my-link a {
   text-decoration: none;
 }
-background: linear-gradient(
-    to bottom,
-    rgba(255, 255, 255, 0.15) 0%,
-    rgba(0, 0, 0, 0.15) 100%
-  ),
-  radial-gradient(
-      at top center,
-      rgba(255, 255, 255, 0.4) 0%,
-      rgba(0, 0, 0, 0.4) 120%
-    )
-    #989898;
+.btn-outline-success {
+  border: 2px solid #ffcb1b;
+  color: #fff;
+}
+.btn-outline-success:hover {
+  background-color: #ffcb1b;
+  color: #fff;
+  border: 2px solid #ffcb1b;
+}
