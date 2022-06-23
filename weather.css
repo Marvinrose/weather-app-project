@@ -2,6 +2,7 @@
   border: 5px solid grey;
   padding: 5px;
   margin: 5px;
+  text-align: center;
 }
 .container {
   max-width: 600px;
@@ -14,8 +15,8 @@ strong {
 .big {
   font-size: 70px;
 }
-.col-sm h2 {
-  font-size: 20px;
+.col-6 h2 {
+  font-size: 18px;
   color: gray;
 }
 
@@ -60,12 +61,7 @@ ul li {
 .d-flex {
   margin-bottom: 15px;
 }
-.col-sm .little {
-  padding-left: 10px;
-}
-.col-sm .more {
-  padding-left: 15px;
-}
+
 .my-link {
   font-family: Arial, Helvetica, sans-serif;
 }
@@ -80,4 +76,7 @@ ul li {
   background-color: #ffcb1b;
   color: #fff;
   border: 2px solid #ffcb1b;
+}
+.border-section {
+  text-align: center;
 }
