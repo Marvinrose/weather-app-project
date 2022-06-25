@@ -1,5 +1,5 @@
-.border {
-  border: 5px solid grey;
+.col-2 {
+  border: 2px solid #fff;
   padding: 5px;
   margin: 5px;
   text-align: center;
@@ -42,10 +42,7 @@ ul li {
   margin-top: 10px;
   padding-top: 10px;
 }
-.col-sm img {
-  display: block;
-  margin: 0 auto;
-}
+
 .weather-app {
   border: 7px solid #ffcb1b;
   padding: 25px;
@@ -70,6 +67,7 @@ ul li {
 }
 .btn-outline-success {
   border: 2px solid #ffcb1b;
+
   color: #fff;
 }
 .btn-outline-success:hover {
