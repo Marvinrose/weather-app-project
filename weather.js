@@ -1,31 +1,41 @@
-let now = new Date();
+function formateDate(timestamp) {
+  let now = new Date();
 
-let date = new Date().getDate();
-console.log(date);
-let days = [
-  "Sunday",
-  "Monday",
-  "Tuesday",
-  "Wednesday",
-  "Thursday",
-  "Friday",
-  "Saturday",
-];
-let day = days[now.getDay()];
+  let date = new Date(timestamp).getDate();
+  console.log(date);
+  let days = [
+    "Sunday",
+    "Monday",
+    "Tuesday",
+    "Wednesday",
+    "Thursday",
+    "Friday",
+    "Saturday",
+  ];
+  let day = days[now.getDay()];
 
-let hours = new Date().getHours();
-if (hours < 10) {
-  hours = `0${hours}`;
+  let hours = new Date().getHours();
+  if (hours < 10) {
+    hours = `0${hours}`;
+  }
+
+  console.log(hours);
+  let minutes = new Date().getMinutes();
+  console.log(minutes);
+  if (minutes < 10) {
+    minutes = `0${minutes}`;
+  }
+  let h2 = document.querySelector("h2");
+  h2.innerHTML = `${day} ${hours}:${minutes}`;
 }
 
-console.log(hours);
-let minutes = new Date().getMinutes();
-console.log(minutes);
-if (minutes < 10) {
-  minutes = `0${minutes}`;
+function formatDay(timestamp) {
+  let date = new Date(timestamp * 1000);
+  let day = date.getDay();
+  let days = ["Sun", "Mon", "Tue", "Wed", "Thur"];
+
+  return days[day];
 }
-let h2 = document.querySelector("h2");
-h2.innerHTML = `${day} ${hours}:${minutes}`;
 
 function displayWeatherCondition(response) {
   console.log(response.data);
@@ -61,14 +71,6 @@ function search(event) {
   let apiUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${apiKey}&units=${units}`;
 
   axios.get(apiUrl).then(displayWeatherCondition);
-}
-
-function formatDay(timestamp) {
-  let date = new Date(timestamp * 1000);
-  let day = date.getDay();
-  let days = ["Sun", "Mon", "Tue", "Wed", "Thur"];
-
-  return days[day];
 }
 
 function displayForecast(response) {
