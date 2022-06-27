@@ -19,23 +19,28 @@ strong {
   font-size: 18px;
   color: gray;
 }
-
+#date {
+  font-size: 18px;
+  color: #fff;
+}
+.weather-forecast-temperature-min {
+  opacity: 0.5;
+}
 #description {
   text-transform: capitalize;
+  color: #ffcb1b;
 }
 #units {
   position: relative;
   font-size: 25px;
   top: -28px;
+  
 }
 #units a {
   text-decoration: none;
-  color: #ffcb1b;
+  color: #fff;
 }
-#units a:hover {
-  color: #ad8c1d;
-  transition: all 200ms ease-in-out;
-}
+
 ul li {
   list-style-type: none;
   font-size: 17px;
