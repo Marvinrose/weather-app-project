@@ -3,6 +3,7 @@
   padding: 7px;
   margin: 5px;
   text-align: center;
+  border-radius: 10px;
 }
 .container {
   max-width: 600px;
@@ -92,5 +93,4 @@ ul li {
 .border-section {
   text-align: center;
   margin: 0 auto;
-  margin-left: 15px;
 }
