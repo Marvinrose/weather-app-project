@@ -12,6 +12,10 @@
 #temperature {
   font-size: 60px;
   font-family: "Courier New", Courier, monospace;
+  line-height: 1;
+}
+.col-6 img {
+  vertical-align: bottom;
 }
 #celsius-link {
   font-weight: 600;
