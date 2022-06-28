@@ -4,6 +4,7 @@
   margin: 5px;
   text-align: center;
   border-radius: 10px;
+  flex: 1;
 }
 .container {
   max-width: 600px;
@@ -98,4 +99,5 @@ ul li {
   text-align: center;
   margin: 0 auto;
   margin-left: 25px;
+  display: flex;
 }
