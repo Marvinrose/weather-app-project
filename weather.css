@@ -28,10 +28,7 @@
   font-size: 18px;
   color: gray;
 }
-#date {
-  font-size: 18px;
-  color: #fff;
-}
+
 .weather-forecast-temperature-min {
   opacity: 0.5;
   font-size: 13px;
